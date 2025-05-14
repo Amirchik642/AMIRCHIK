@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is Amirkhan?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="glitch-container">
+            <h1 class="glitch-text">Enter the Mind</h1>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>🤔 About Me</h2>
+        <div class="about-content">
+            <div class="photo-gallery">
+                <!-- Photo placeholders -->
+                <div class="photo-placeholder" onclick="showPhotoDescription('Main Photo', 'Picture of me at my new work in Enschdede')">
+                    <img src="images/main-photo.jpg" alt="Professional headshot">
+                    <span>Main Photo</span>
+                </div>
+                <div class="photo-placeholder" onclick="showPhotoDescription('Coding', 'Me coding at CS seminar')">
+                    <img src="images/coding-projects.jpg" alt="Coding projects">
+                    <span>Coding</span>
+                </div>
+                <div class="photo-placeholder" onclick="showPhotoDescription('Engineering', 'The only engineering picture which I have')">
+                    <img src="images/engineering-work.jpg" alt="Engineering work">
+                    <span>Engineering</span>
+                </div>
+                <div class="photo-placeholder" onclick="showPhotoDescription('Team Projects', 'Picture with my friend and project teammate')">
+                    <img src="images/team-collaboration.jpg" alt="Team collaboration">
+                    <span>Team Projects</span>
+                </div>
+                <div class="photo-placeholder" onclick="showPhotoDescription('Hobbies', 'My homemade liquor with asian pear, hot pepper and lime leaves')">
+                    <img src="images/hobbies.jpg" alt="Personal hobbies">
+                    <span>Hobbies</span>
+                </div>
+                <div class="photo-placeholder" onclick="showPhotoDescription('Travel', 'Rainy day on holidays in Spain')">
+                    <img src="images/travel.jpg" alt="Travel experiences">
+                    <span>Travel</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>Amirkhan Khaitov</h3>
+                <p class="subtitle">19 y.o. | Mechanical Engineering Student | Twente, Netherlands</p>
+                <p class="story">I am a TPC student. Now you are on my portfolio website! Here you can find some things about me. Plesae do not forget to click on pictures and soft skills to see my short descriptions!</p>
+                <div class="fun-facts">
+                    <h4>Fun Facts 🎯</h4>
+                    <ul>
+                        <li>I lived in UK for 2 years</li>
+                        <li>I love to cook to release stress</li>
+                        <li>I can fold my left ear in a strange way(I know it sounds weird)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>🎮 Soft Skills Build</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <button onclick="showSkill('Teamwork', 'I really had issues with teamwork during semester 1, because we had lots of problems with communication and understanding each other. But then I realised that having different opinions is a nice thing for a group and it gives us a chance to look at the situation from different points of view!')">
+                    <h3>Teamwork</h3>
+                    <span class="skill-icon">🤝</span>
+                </button>
+            </div>
+            <div class="skill-item">
+                <button onclick="showSkill('Problem Solving', 'Problem solving is one of my best skills, so I put it here just for everyone to know that I am good at it.')">
+                    <h3>Problem Solving</h3>
+                    <span class="skill-icon">🧩</span>
+                </button>
+            </div>
+            <div class="skill-item">
+                <button onclick="showSkill('Communication', 'Communication was pretty difficult for me when I just started my studies in Enschede. The main reason was that I rent an apartment, so it meant for me that it was impossible for me to find friends in student housings. HOWEVER, after some time, I realised that if I am just being friendly in the university, it\'s pretty easy to find some good friends!')">
+                    <h3>Communication</h3>
+                    <span class="skill-icon">💬</span>
+                </button>
+            </div>
+            <div class="skill-item">
+                <button onclick="showSkill('Adaptability', 'I always thought that adaptability is one of the most difficult skills to obtain, because for that you need to get to the point where you need to adapt to something. And when i moved to Enschede, I experienced exactly this thing! New country,new people and new cilture just did not leave me a choice. I had to adapt to everything and I did it!')">
+                    <h3>Adaptability</h3>
+                    <span class="skill-icon">🔄</span>
+                </button>
+            </div>
+            <div class="skill-item">
+                <button onclick="showSkill('Intercultural Awareness', 'Intercultural awareness is my favorite topic to complain about! When I just arrived to Netherlands, I was shocked how people can just eat potato chips and sandwiches. I even could not find a single peace of meat on bone, to make a soup (except some in turkish stores which I found later)! However, after living here for some time, I realised that being different is okay for people from different cultures and it is a good thing, because we can share our traditions!')">
+                    <h3>Intercultural Awareness</h3>
+                    <span class="skill-icon">🌍</span>
+                </button>
+            </div>
+            <div class="skill-item">
+                <button onclick="showSkill('Initiative', 'During semesters 1 and 2, I was not a very initiative person. I was just following the group and doing what they told me to do. However, during semester 3, I realised that I can to be more initiative, that I can offer lots of ideas, not only do the things I was told to do.')">
+                    <h3>Initiative</h3>
+                    <span class="skill-icon">🚀</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini-Games Section -->
+    <section id="games" class="section">
+        <h2>🎲 Mini-Games</h2>
+        <div class="games-grid">
+            <div class="game-card" id="skill-challenge">
+                <h3>Skill Challenge</h3>
+                <p>Test your soft skills in this interactive challenge!</p>
+            </div>
+            <div class="game-card" id="beat-deadline">
+                <h3>Beat the Deadline</h3>
+                <p>Click tasks faster than time runs out!</p>
+            </div>
+            <div class="game-card" id="conflict-manager">
+                <h3>Conflict Manager</h3>
+                <p>Choose the right dialogue to resolve conflicts!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>📱 Contact</h2>
+        <div class="contact-links">
+            <button onclick="showEmail()" class="contact-link">📧 Email</button>
+            <a href="https://t.me/amirkhaitov" class="contact-link">📱 Telegram</a>
+            <a href="https://www.instagram.com/amir.ar.kh?igsh=MW54MHF5ejJ0cXFsbA%3D%3D&utm_source=qr" class="contact-link">💼 Instagram</a>
+        </div>
+    </section>
+
+    <!-- Email Modal -->
+    <div id="email-modal" class="modal">
+        <div class="modal-content email-modal">
+            <span class="close-button">&times;</span>
+            <h3>My Email</h3>
+            <p class="email-address">amirhaitov009@gmail.com</p>
+            <button onclick="copyEmail()" class="copy-button">Copy Email</button>
+        </div>
+    </div>
+
+    <!-- Modal for skill details -->
+    <div id="skill-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="games.js"></script>
+</body>
+</html> 
